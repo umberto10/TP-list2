@@ -1,13 +1,13 @@
-public abstract class Conctracting_party {
+public abstract class Contracting_party implements Contracting_interface{
     public String nip;
     public String street;
     public String city;
     public String country;
     public String name;
 
-    public Conctracting_party(){};
+    public Contracting_party(){};
 
-    public Conctracting_party(String nip, String street ,String  city ,String  country ,String  name) {
+    public Contracting_party(String nip, String street , String  city , String  country , String  name) {
         this.nip = nip;
         this.street = street;
         this.city = city;
@@ -22,4 +22,9 @@ public abstract class Conctracting_party {
     public void set_country(String country) {this.country = country;}
     public void set_name(String name) {this.name = name;}
 
+    public String get_nip() {return nip;}
+    public String get_street() {return street;}
+    public String get_city() {return city;}
+    public String get_country() {return country;}
+    public String get_name() {return name;}
 }

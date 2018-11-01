@@ -16,14 +16,14 @@ public class Contracts {
 
     public void show_contracts(){
         for(Contract_creator contract: contracts) {
-            System.out.println("Contract --> " + contract.title);
+            System.out.println("Contract --> " + contract.get_title());
         }
         System.out.println();
     }
 
     public void read_contract(String title){
         for(Contract_creator contract: contracts) {
-            if (title.equals(contract.title)) {
+            if (title.equals(contract.get_title())) {
                 contract.read_me();
                 break;
             }

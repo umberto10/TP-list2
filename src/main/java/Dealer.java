@@ -1,4 +1,4 @@
-public class Dealer extends Conctracting_party {
+public class Dealer extends Contracting_party {
 
     public Dealer() {
         nip = "Default";

@@ -1,4 +1,4 @@
-public class Buyer extends Conctracting_party {
+public class Buyer extends Contracting_party {
 
     public Buyer() {
         nip = "Default";

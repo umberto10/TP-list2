@@ -19,6 +19,10 @@ public class Article {
     public void set_price(double price){this.price = price;}
     public void set_count(int count){this.count = count;}
 
+    public String get_name(){return this.name;}
+    public double get_price(){return this.price;}
+    public int get_count(){return this.count;}
+
     public void show_me(){
         System.out.println("name: " + name + " - "  + "total price --> " + price*count);
     }

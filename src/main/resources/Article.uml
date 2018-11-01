@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Article</OriginalElement>
+  <nodes>
+    <node x="46.003125" y="81.0">Contracting_party</node>
+    <node x="210.0" y="162.0">Article</node>
+    <node x="138.86741071428574" y="243.0">Contract_creator</node>
+    <node x="106.0" y="162.0">Buyer</node>
+    <node x="165.74241071428574" y="324.0">Contracts</node>
+    <node x="0.0" y="162.0">Dealer</node>
+    <node x="36.003125" y="0.0">Contracting_interface</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Contract_creator" target="Contracting_party">
+      <point x="-21.285714285714306" y="-15.5" />
+      <point x="192.08169642857143" y="223.0" />
+      <point x="199.5" y="223.0" />
+      <point x="199.5" y="142.0" />
+      <point x="187.30312500000002" y="142.0" />
+      <point x="62.80000000000001" y="15.5" />
+    </edge>
+    <edge source="Contracts" target="Contract_creator">
+      <point x="-39.75" y="-15.5" />
+      <point x="178.99241071428574" y="299.0" />
+      <point x="157.49241071428574" y="299.0" />
+      <point x="-55.875" y="15.5" />
+    </edge>
+    <edge source="Contract_creator" target="Article">
+      <point x="21.285714285714278" y="-15.5" />
+      <point x="234.65312500000002" y="223.0" />
+      <point x="241.875" y="223.0" />
+      <point x="-10.625" y="15.5" />
+    </edge>
+    <edge source="Contract_creator" target="Dealer">
+      <point x="-63.85714285714289" y="-15.5" />
+      <point x="149.51026785714285" y="223.0" />
+      <point x="43.0" y="223.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="Contract_creator" target="Buyer">
+      <point x="-42.5714285714286" y="-15.5" />
+      <point x="170.79598214285713" y="213.0" />
+      <point x="147.5" y="213.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="Buyer" target="Contracting_party">
+      <point x="-20.75" y="-15.5" />
+      <point x="126.75" y="142.0" />
+      <point x="124.503125" y="142.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="Dealer" target="Contracting_party">
+      <point x="21.5" y="-15.5" />
+      <point x="64.5" y="142.0" />
+      <point x="93.10312500000002" y="142.0" />
+      <point x="-31.399999999999977" y="15.5" />
+    </edge>
+    <edge source="Contracting_party" target="Contracting_interface">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="150.0" y="172.5" />
+  <SelectedNodes>
+    <node>Article</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
