@@ -1,10 +1,18 @@
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.Mockito.*;
+import org.mockito.MockitoAnnotations;
 
 import static org.junit.Assert.*;
+import static org.mockito.Mockito.doReturn;
+import static org.mockito.Mockito.when;
 
 public class ContractsTest {
+
 
     private Contracts con_test;
 
@@ -27,6 +35,14 @@ public class ContractsTest {
         Contract_creator c = new Contract_creator("TEST");
         con_test.add_existing_contract(c);
         assertEquals("TEST", this.con_test.contracts.get(0).get_title());
+    }
+
+    @Test
+    public void add_to_database() {
+        Database database = Mockito.mock(Database.class);
+        when(database.add_to_database()).thenReturn(true);
+
+        assertTrue(database.add_to_database());
     }
 
     @Test

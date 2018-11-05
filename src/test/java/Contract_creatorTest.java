@@ -40,6 +40,7 @@ public class Contract_creatorTest {
         } catch (Exception e) {System.err.println("ERROR");}
     }
 
+    @SuppressWarnings("deprecation")
     @Test
     public void set_date() throws Exception{
         try {
